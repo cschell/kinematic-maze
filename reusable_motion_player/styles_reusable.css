@@ -1,0 +1,74 @@
+.myClass {
+    height: 500px !important;
+    width: 700px !important;
+}
+
+.motion-player .progress {
+    border-radius: 0;
+    height: 0.6rem;
+}
+
+.motion-player:not(.readonly) .progress {
+    cursor: pointer;
+}
+
+.motion-player .canvas-container {
+    height: 500px ;
+    width: 700px ;
+}
+
+.motion-player .progress {
+    border-radius: 0;
+    height: 0.6rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.motion-player:not(.readonly) .progress {
+    cursor: pointer; /* Apply only when 'readonly' class is not present */
+}
+
+.progress-bar {
+    transition: none !important;
+}
+
+.motion-player {
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-flow: column;
+  
+}
+.motion-player .canvas-container {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--bs-progress-bar-bg);
+    transition: var(--bs-progress-bar-transition);
+}
+
+.progress, .progress-stacked {
+    --bs-progress-height: 1rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: var(--bs-secondary-bg);
+    --bs-progress-border-radius: var(--bs-border-radius);
+    --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: #0d6efd;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    height: var(--bs-progress-height);
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color: var(--bs-progress-bg);
+    border-radius: var(--bs-progress-border-radius);
+}

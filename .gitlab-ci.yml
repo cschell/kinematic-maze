@@ -1,0 +1,15 @@
+image: node:16 # Using Node.js version 16
+
+pages:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+  tags:
+    - docker
+  stage: deploy
+  script:
+    - npx pnpm install # Install dependencies using npx
+    - npx pnpm run build # Build the website
+    - mv dist/bundle.js* public
+  artifacts:
+    paths:
+      - public
