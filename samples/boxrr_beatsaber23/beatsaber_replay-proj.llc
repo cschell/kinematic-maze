@@ -1,0 +1,10 @@
+{
+  version: 1,
+  mediaFileName: 'beatsaber_replay.mp4',
+  cutSegments: [
+    {
+      end: 20.030397098828125,
+      name: '',
+    },
+  ],
+}

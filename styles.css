@@ -1,0 +1,191 @@
+
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+td {
+    vertical-align: top;
+    width: 50%;
+
+}
+
+a[data-bs-toggle="tooltip"] {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+a[data-bs-toggle="tooltip"]:hover {
+    cursor: help;
+    color: inherit;
+    border-bottom-color: currentColor;
+}
+
+.motion-player {
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-flow: column;
+    height: 300px;
+}
+
+.motion-player canvas {
+    display: block;
+}
+
+.motion-player .progress {
+    border-radius: 0;
+    height: 0.6rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.motion-player:not(.readonly) .progress {
+    cursor: pointer; /* Apply only when 'readonly' class is not present */
+}
+
+.motion-player .canvas-container {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+dl.specifications {
+    min-height: 100px;
+}
+
+dl.specifications {
+    font-size: 1rem;
+    line-height: 1.25em;
+    padding: 0.25em;
+}
+
+dl.specifications dt {
+    float: left;
+    margin-right: 0.5em;
+}
+
+dl.specifications dd {
+    margin-bottom: 0.75em;
+}
+
+table.specifications th {
+    vertical-align: top;
+    width: 56px;
+}
+
+table.specifications tr:nth-of-type(2) th {
+    height: 75px;
+}
+
+table.specifications tr {
+    border-bottom: 1px solid #ccc;
+}
+
+table.specifications tr:last-child {
+    border-bottom: none;
+}
+
+.progress-bar {
+    transition: none !important;
+}
+
+.head-examples .motion-player {
+    height: 400px;
+}
+
+.beatsaber-player {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+}
+
+.beatsaber-player #playerInfoOverlay {
+    display: None
+}
+
+.contributions sup {
+    font-size: 1.25em;
+    top: 0em;
+}
+
+.spec-list li {
+    border: none
+}
+
+.motion-player {
+    width: 100%;
+}
+
+.card-body h4 + p {
+    height: 96px;
+    max-height: 96px;
+}
+
+.card .specs {
+    height: 240px;
+    max-height: 240px;
+}
+
+.bg-info-subtle {
+    --bs-bg-opacity: 0.15;
+    background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* Test Felix */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-item {
+    padding: 5px 0;
+    background-color: transparent;
+    color: black;
+}
+
+.dropdown-item span {
+    margin-right: 10px;
+}
+
+.dropdown-item button {
+    cursor: pointer;
+}
+
+.copied-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+input::placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+code {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 5px;
+}
