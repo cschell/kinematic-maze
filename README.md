@@ -1,6 +1,6 @@
-## Navigating the Kinematic Maze: Analyzing, Standardizing and Unifying XR Motion Datasets
+## Navigating the Kinematic Maze: A Comprehensive Guide to XR Motion Dataset Standard
 
-Welcome to the official repository for the accompanying webpage of our [research paper](#TODO). This repository serves
+Welcome to the official repository for the accompanying webpage of our [research paper](http://downloads.hci.informatik.uni-wuerzburg.de/2024-01-Rack-Navigating_the_Kinematic_Maze.pdf). This repository serves
 as a central hub for various resources and tools related to our paper:
 
 1. **Motion Visualization Tool**
